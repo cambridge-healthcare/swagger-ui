@@ -96,6 +96,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 1;
 }
 
 .howareyou_float .howareyou_frame {
@@ -367,13 +368,15 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading,
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading,
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading {
-  border-radius: 4px 4px 0 0;
-  box-shadow: inset 0 1px 0 0 white;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   height: 38px;
 }
 
+.operation .heading {
+  border-radius: 4px 4px 0 0;
+  box-shadow: inset 0 1px 0 0 white;
+}
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.content,
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.content,
@@ -390,6 +393,13 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading ul.options {
   margin: 0;
   padding: 0 10px;
+}
+
+body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading ul.options li,
+body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading ul.options li,
+body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading ul.options li,
+body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading ul.options li {
+  padding: 0;
 }
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading ul.options li a,
