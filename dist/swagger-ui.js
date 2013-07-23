@@ -1199,6 +1199,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
         resource = _ref3[_i];
         this.addResource(resource);
       }
+      howareyou.report_height();
       return this;
     };
 

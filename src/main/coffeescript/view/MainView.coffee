@@ -7,6 +7,7 @@ class MainView extends Backbone.View
 
     # Render each resource
     @addResource resource for resource in @model.apisArray
+    howareyou.report_height();
     @
 
   addResource: (resource) ->
