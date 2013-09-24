@@ -107,7 +107,6 @@ class OperationView extends Backbone.View
         $.each form.children().find('input[type~="file"]'), (i, el) ->
           bodyParam.append($(el).attr('name'), el.files[0])
 
-        console.log(bodyParam)
       else if isFormPost
         bodyParam = new FormData()
         for param in @model.parameters
@@ -117,19 +116,35 @@ class OperationView extends Backbone.View
         bodyParam = {}
         consumes = 'application/x-www-form-urlencoded'
         for param in @model.parameters
-          if param.paramType is 'body' and typeof map[param.name] isnt 'undefined'
+          if (@model.httpMethod is 'put' and param.paramType isnt 'path') or
+              (param.paramType is 'body' and typeof map[param.name] isnt 'undefined')
             bodyParam[param.name] = map[param.name]
-        bodyParam = jQuery.param(bodyParam)
+            delete map[param.name]
+        log bodyParam
+        bodyParam = ohauth.qsString(bodyParam)
 
       log "bodyParam = " + bodyParam
 
-      headerParams = {}
-      invocationUrl =
-        if @model.supportHeaderParams()
-          headerParams = @model.getHeaderParams(map)
-          @model.urlify(map, false)
+      headerParams = if @model.supportHeaderParams()
+          @model.getHeaderParams(map)
         else
-          @model.urlify(map, true)
+          {}
+
+
+      # split path and non-path parameters
+
+      params_split = this.model.parameters.reduce((split, param) ->
+        if map[param.name] is undefined then return split
+        (if param.paramType is 'path' then split.path else split.query)[param.name] = map[param.name]
+        split
+      , { path: {}, query: {}})
+
+      log(params_split)
+
+      query_string = ohauth.qsString(params_split.query)
+
+      invocationUrl = this.model.urlify(params_split.path) +
+        if query_string then '?' + query_string else ''
 
       log 'submitting ' + invocationUrl
 

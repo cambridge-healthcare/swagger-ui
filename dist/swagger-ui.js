@@ -1350,7 +1350,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
     };
 
     OperationView.prototype.submitOperation = function(e) {
-      var bodyParam, consumes, error_free, extraHeaders, form, header, headerParams, headersGen, invocationUrl, isFileUpload, isFormPost, map, o, obj, param, paramContentTypeField, responseContentTypeField, _i, _j, _k, _l, _len, _len1, _len2, _len3, _len4, _m, _ref5, _ref6, _ref7, _ref8, _ref9,
+      var bodyParam, consumes, error_free, extraHeaders, form, header, headerParams, headersGen, invocationUrl, isFileUpload, isFormPost, map, o, obj, param, paramContentTypeField, params_split, query_string, responseContentTypeField, _i, _j, _k, _l, _len, _len1, _len2, _len3, _len4, _m, _ref5, _ref6, _ref7, _ref8, _ref9,
         _this = this;
 
       if (e != null) {
@@ -1413,7 +1413,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
           $.each(form.children().find('input[type~="file"]'), function(i, el) {
             return bodyParam.append($(el).attr('name'), el.files[0]);
           });
-          console.log(bodyParam);
         } else if (isFormPost) {
           bodyParam = new FormData();
           _ref8 = this.model.parameters;
@@ -1429,15 +1428,29 @@ helpers = helpers || Handlebars.helpers; data = data || {};
           _ref9 = this.model.parameters;
           for (_m = 0, _len4 = _ref9.length; _m < _len4; _m++) {
             param = _ref9[_m];
-            if (param.paramType === 'body' && typeof map[param.name] !== 'undefined') {
+            if ((this.model.httpMethod === 'put' && param.paramType !== 'path') || (param.paramType === 'body' && typeof map[param.name] !== 'undefined')) {
               bodyParam[param.name] = map[param.name];
+              delete map[param.name];
             }
           }
-          bodyParam = jQuery.param(bodyParam);
+          log(bodyParam);
+          bodyParam = ohauth.qsString(bodyParam);
         }
         log("bodyParam = " + bodyParam);
-        headerParams = {};
-        invocationUrl = this.model.supportHeaderParams() ? (headerParams = this.model.getHeaderParams(map), this.model.urlify(map, false)) : this.model.urlify(map, true);
+        headerParams = this.model.supportHeaderParams() ? this.model.getHeaderParams(map) : {};
+        params_split = this.model.parameters.reduce(function(split, param) {
+          if (map[param.name] === void 0) {
+            return split;
+          }
+          (param.paramType === 'path' ? split.path : split.query)[param.name] = map[param.name];
+          return split;
+        }, {
+          path: {},
+          query: {}
+        });
+        log(params_split);
+        query_string = ohauth.qsString(params_split.query);
+        invocationUrl = this.model.urlify(params_split.path) + (query_string ? '?' + query_string : '');
         log('submitting ' + invocationUrl);
         $(".request_url", $(this.el)).html("<pre>" + invocationUrl + "</pre>");
         $(".response_throbber", $(this.el)).show();
