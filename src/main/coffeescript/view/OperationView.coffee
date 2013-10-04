@@ -107,11 +107,6 @@ class OperationView extends Backbone.View
         $.each form.children().find('input[type~="file"]'), (i, el) ->
           bodyParam.append($(el).attr('name'), el.files[0])
 
-      else if isFormPost
-        bodyParam = new FormData()
-        for param in @model.parameters
-          if map[param.name]?
-            bodyParam.append(param.name, map[param.name])
       else
         bodyParam = {}
         consumes = 'application/x-www-form-urlencoded'
@@ -142,9 +137,12 @@ class OperationView extends Backbone.View
       log(params_split)
 
       query_string = ohauth.qsString(params_split.query)
+      console.log(query_string)
+
+      has_body = => @model.httpMethod is 'put' or @model.httpMethod is 'post'
 
       invocationUrl = this.model.urlify(params_split.path) +
-        if query_string then '?' + query_string else ''
+        if query_string and not has_body() then '?' + query_string else ''
 
       log 'submitting ' + invocationUrl
 
@@ -156,7 +154,7 @@ class OperationView extends Backbone.View
         type: @model.httpMethod
         url: invocationUrl
         headers: headerParams
-        data: bodyParam
+        data: (bodyParam || query_string) if has_body()
         contentType: consumes
         dataType: 'json'
         processData: false
