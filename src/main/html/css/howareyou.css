@@ -27,6 +27,25 @@ body {
   display: none;
 }
 
+.container {
+  position: relative;
+}
+
+h2 {
+  color: #5d5d5d;
+  font-weight: bold;
+}
+
+.container h4.baseurl {
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
+.resources {
+  margin-bottom: 30px;
+}
+
 .howareyou_max960 {
   width: 960px;
   max-width: 100%;
@@ -284,47 +303,47 @@ body {
 /* override theme */
 
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.content {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.content {
   border-color: #fac4b5;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.content {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.content {
   border-color: #f1b8c9;
 }
 
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.content {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.content {
   border-color: #87d0cc;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.content {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.content {
   border-color: #84c4df;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading {
   background: #ffefea;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading {
   background: #fce6ed;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading {
   background: #ddf2f1;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading {
   background: #dceff7;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading h3 span.http_method a,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading h3 span.http_method a,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading h3 span.http_method a,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading h3 span.http_method a {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading h3 span.http_method a,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading h3 span.http_method a,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading h3 span.http_method a,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading h3 span.http_method a {
   box-shadow: inset 0 1px 0 0 rgba(255,255,255, 0.45);
   border-radius: 4px 0 0 0;
   position: absolute;
@@ -337,37 +356,37 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
   font-size: 14px;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading h3 span.path,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading h3 span.path,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading h3 span.path,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading h3 span.path {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading h3 span.path,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading h3 span.path,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading h3 span.path,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading h3 span.path {
   line-height: 38px;
   padding-left: 85px;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading h3 span.http_method a {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading h3 span.http_method a {
   background: #fe9375;
   border: 1px solid #e87d60;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading h3 span.http_method a {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading h3 span.http_method a {
   background: #e95a85;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading h3 span.http_method a {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading h3 span.http_method a {
   background: #19aaa2;
   border: 1px solid #119891;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading h3 span.http_method a {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading h3 span.http_method a {
   background: #1292c9;
   border: 1px solid #107ead;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading {
   overflow: visible;
   position: relative;
   height: 38px;
@@ -378,51 +397,51 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
   box-shadow: inset 0 1px 0 0 white;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.content,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.content,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.content,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.content {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.content,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.content,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.content,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.content {
   border-radius: 0 0 4px 4px;
   background: white;
 }
 
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading ul.options,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading ul.options,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading ul.options,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading ul.options {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading ul.options,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading ul.options,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading ul.options,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading ul.options {
   margin: 0;
   padding: 0 10px;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading ul.options li,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading ul.options li,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading ul.options li,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading ul.options li {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading ul.options li,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading ul.options li,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading ul.options li,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading ul.options li {
   padding: 0;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading ul.options li a,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading ul.options li a,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading ul.options li a,
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading ul.options li a {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading ul.options li a,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading ul.options li a,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading ul.options li a,
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading ul.options li a {
   font-weight: bold;
   font-size: 12px;
   line-height: 38px;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading ul.options li a {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading ul.options li a {
   color: #fe9375;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading ul.options li a {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.delete div.heading ul.options li a {
   color: #e95a85;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading ul.options li a {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading ul.options li a {
   color: #19aaa2;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading ul.options li a {
+body ul.resources li.resource ul.endpoints li.endpoint ul.operations li.operation.get div.heading ul.options li a {
   color: #1292c9;
 }
