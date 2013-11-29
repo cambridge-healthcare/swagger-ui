@@ -115,6 +115,9 @@ class OperationView extends Backbone.View
               (param.paramType is 'body' and typeof map[param.name] isnt 'undefined')
             bodyParam[param.name] = map[param.name]
             delete map[param.name]
+        for name, value of bodyParam
+          if value in  ["", null, undefined]
+            delete bodyParam[name]
         log bodyParam
         bodyParam = ohauth.qsString(bodyParam)
 
