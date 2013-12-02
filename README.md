@@ -14,6 +14,10 @@ How to Use It
 ### Download
 You can use the swagger-ui code AS-IS!  No need to build or recompile--just clone this repo and use the pre-built files in the `dist` folder.  If you like swagger-ui as-is, stop here.
 
+### Run locally
+
+You can easily run the server with provided `bin/ruby-server` script.
+
 ### Build
 You can rebuild swagger-ui on your own to tweak it or just so you can say you did.  To do so, follow these steps:
 
