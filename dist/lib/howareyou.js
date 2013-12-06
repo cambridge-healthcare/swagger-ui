@@ -19,7 +19,8 @@
     cda: 9014,
     chea: 9015,
     nhschoices: 9012,
-    snomed: 9494
+    snomed: 9494,
+    sms: 9017
   };
 
   howareyou.apis = [];
