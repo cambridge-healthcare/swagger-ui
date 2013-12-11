@@ -3,5 +3,5 @@
 APP="swagger"
 DELIVER_TO="~swagger/app/doc"
 GENERATED_DIR=dist
-GENERATE_CMD="cake dist"
+GENERATE_CMD="npm run-script build"
 STRATEGY=generated
