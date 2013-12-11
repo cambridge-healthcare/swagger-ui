@@ -185,7 +185,7 @@ var Docs = {
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['content_type'] = template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [2,'>= 1.0.0-rc.3'];
+  this.compilerInfo = [3,'>= 1.0.0-rc.4'];
 helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, functionType="function", self=this;
 
@@ -228,7 +228,7 @@ function program4(depth0,data) {
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['main'] = template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [2,'>= 1.0.0-rc.3'];
+  this.compilerInfo = [3,'>= 1.0.0-rc.4'];
 helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this;
 
@@ -258,7 +258,7 @@ function program1(depth0,data) {
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['operation'] = template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [2,'>= 1.0.0-rc.3'];
+  this.compilerInfo = [3,'>= 1.0.0-rc.4'];
 helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this;
 
@@ -422,7 +422,7 @@ function program11(depth0,data) {
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['param'] = template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [2,'>= 1.0.0-rc.3'];
+  this.compilerInfo = [3,'>= 1.0.0-rc.4'];
 helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this;
 
@@ -535,7 +535,7 @@ function program12(depth0,data) {
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['param_list'] = template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [2,'>= 1.0.0-rc.3'];
+  this.compilerInfo = [3,'>= 1.0.0-rc.4'];
 helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, stack2, self=this, functionType="function", escapeExpression=this.escapeExpression;
 
@@ -631,7 +631,7 @@ function program11(depth0,data) {
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['param_readonly'] = template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [2,'>= 1.0.0-rc.3'];
+  this.compilerInfo = [3,'>= 1.0.0-rc.4'];
 helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this;
 
@@ -695,7 +695,7 @@ function program6(depth0,data) {
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['param_readonly_required'] = template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [2,'>= 1.0.0-rc.3'];
+  this.compilerInfo = [3,'>= 1.0.0-rc.4'];
 helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this;
 
@@ -759,7 +759,7 @@ function program6(depth0,data) {
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['param_required'] = template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [2,'>= 1.0.0-rc.3'];
+  this.compilerInfo = [3,'>= 1.0.0-rc.4'];
 helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this;
 
@@ -892,7 +892,7 @@ function program15(depth0,data) {
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['resource'] = template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [2,'>= 1.0.0-rc.3'];
+  this.compilerInfo = [3,'>= 1.0.0-rc.4'];
 helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression;
 
@@ -945,7 +945,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['signature'] = template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [2,'>= 1.0.0-rc.3'];
+  this.compilerInfo = [3,'>= 1.0.0-rc.4'];
 helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression;
 
@@ -966,7 +966,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['status_code'] = template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [2,'>= 1.0.0-rc.3'];
+  this.compilerInfo = [3,'>= 1.0.0-rc.4'];
 helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression;
 
@@ -986,18 +986,18 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
 
 
-// Generated by CoffeeScript 1.6.2
+// Generated by CoffeeScript 1.5.0
 (function() {
-  var ContentTypeView, HeaderView, MainView, OperationView, ParameterView, ResourceView, SignatureView, StatusCodeView, SwaggerUi, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7, _ref8,
+  var ContentTypeView, HeaderView, MainView, OperationView, ParameterView, ResourceView, SignatureView, StatusCodeView, SwaggerUi,
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
   SwaggerUi = (function(_super) {
+
     __extends(SwaggerUi, _super);
 
     function SwaggerUi() {
-      _ref = SwaggerUi.__super__.constructor.apply(this, arguments);
-      return _ref;
+      SwaggerUi.__super__.constructor.apply(this, arguments);
     }
 
     SwaggerUi.prototype.dom_id = "swagger_ui";
@@ -1012,7 +1012,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
     SwaggerUi.prototype.initialize = function(options) {
       var _this = this;
-
       if (options == null) {
         options = {};
       }
@@ -1048,10 +1047,9 @@ helpers = helpers || Handlebars.helpers; data = data || {};
     };
 
     SwaggerUi.prototype.load = function() {
-      var _ref1;
-
-      if ((_ref1 = this.mainView) != null) {
-        _ref1.clear();
+      var _ref;
+      if ((_ref = this.mainView) != null) {
+        _ref.clear();
       }
       this.headerView.update(this.options.discoveryUrl, this.options.apiKey);
       this.api = new SwaggerApi(this.options);
@@ -1062,7 +1060,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
     SwaggerUi.prototype.render = function() {
       var _this = this;
-
       this.showMessage('Finished Loading Resource Information. Rendering Swagger UI...');
       this.mainView = new MainView({
         model: this.api,
@@ -1095,7 +1092,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
     SwaggerUi.prototype.onLoadFailure = function(data) {
       var val;
-
       if (data == null) {
         data = '';
       }
@@ -1115,11 +1111,11 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   window.SwaggerUi = SwaggerUi;
 
   HeaderView = (function(_super) {
+
     __extends(HeaderView, _super);
 
     function HeaderView() {
-      _ref1 = HeaderView.__super__.constructor.apply(this, arguments);
-      return _ref1;
+      HeaderView.__super__.constructor.apply(this, arguments);
     }
 
     HeaderView.prototype.events = {
@@ -1181,22 +1177,21 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   })(Backbone.View);
 
   MainView = (function(_super) {
+
     __extends(MainView, _super);
 
     function MainView() {
-      _ref2 = MainView.__super__.constructor.apply(this, arguments);
-      return _ref2;
+      MainView.__super__.constructor.apply(this, arguments);
     }
 
     MainView.prototype.initialize = function() {};
 
     MainView.prototype.render = function() {
-      var resource, _i, _len, _ref3;
-
+      var resource, _i, _len, _ref;
       $(this.el).html(Handlebars.templates.main(this.model));
-      _ref3 = this.model.apisArray;
-      for (_i = 0, _len = _ref3.length; _i < _len; _i++) {
-        resource = _ref3[_i];
+      _ref = this.model.apisArray;
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        resource = _ref[_i];
         this.addResource(resource);
       }
       howareyou.report_height();
@@ -1205,7 +1200,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
     MainView.prototype.addResource = function(resource) {
       var api_id, resourceView;
-
       api_id = howareyou.api_id(resource.api.discoveryUrl);
       resourceView = new ResourceView({
         model: resource,
@@ -1225,23 +1219,22 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   })(Backbone.View);
 
   ResourceView = (function(_super) {
+
     __extends(ResourceView, _super);
 
     function ResourceView() {
-      _ref3 = ResourceView.__super__.constructor.apply(this, arguments);
-      return _ref3;
+      ResourceView.__super__.constructor.apply(this, arguments);
     }
 
     ResourceView.prototype.initialize = function() {};
 
     ResourceView.prototype.render = function() {
-      var operation, _i, _len, _ref4;
-
+      var operation, _i, _len, _ref;
       $(this.el).html(Handlebars.templates.resource(this.model));
       this.number = 0;
-      _ref4 = this.model.operationsArray;
-      for (_i = 0, _len = _ref4.length; _i < _len; _i++) {
-        operation = _ref4[_i];
+      _ref = this.model.operationsArray;
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        operation = _ref[_i];
         this.addOperation(operation);
       }
       return this;
@@ -1249,7 +1242,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
     ResourceView.prototype.addOperation = function(operation) {
       var operationView;
-
       operation.number = this.number;
       operationView = new OperationView({
         model: operation,
@@ -1265,11 +1257,11 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   })(Backbone.View);
 
   OperationView = (function(_super) {
+
     __extends(OperationView, _super);
 
     function OperationView() {
-      _ref4 = OperationView.__super__.constructor.apply(this, arguments);
-      return _ref4;
+      OperationView.__super__.constructor.apply(this, arguments);
     }
 
     OperationView.prototype.events = {
@@ -1282,8 +1274,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
     OperationView.prototype.initialize = function() {};
 
     OperationView.prototype.render = function() {
-      var contentTypeModel, contentTypeView, isMethodSubmissionSupported, param, responseSignatureView, signatureModel, statusCode, _i, _j, _len, _len1, _ref5, _ref6;
-
+      var contentTypeModel, contentTypeView, isMethodSubmissionSupported, param, responseSignatureView, signatureModel, statusCode, _i, _j, _len, _len1, _ref, _ref1;
       isMethodSubmissionSupported = jQuery.inArray(this.model.httpMethod, this.model.supportedSubmitMethods()) >= 0;
       if (!isMethodSubmissionSupported) {
         this.model.isReadOnly = true;
@@ -1316,14 +1307,14 @@ helpers = helpers || Handlebars.helpers; data = data || {};
         model: contentTypeModel
       });
       $('.content-type', $(this.el)).append(contentTypeView.render().el);
-      _ref5 = this.model.parameters;
-      for (_i = 0, _len = _ref5.length; _i < _len; _i++) {
-        param = _ref5[_i];
+      _ref = this.model.parameters;
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        param = _ref[_i];
         this.addParameter(param);
       }
-      _ref6 = this.model.errorResponses;
-      for (_j = 0, _len1 = _ref6.length; _j < _len1; _j++) {
-        statusCode = _ref6[_j];
+      _ref1 = this.model.errorResponses;
+      for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
+        statusCode = _ref1[_j];
         this.addStatusCode(statusCode);
       }
       return this;
@@ -1331,7 +1322,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
     OperationView.prototype.addParameter = function(param) {
       var paramView;
-
       paramView = new ParameterView({
         model: param,
         tagName: 'tr',
@@ -1342,7 +1332,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
     OperationView.prototype.addStatusCode = function(statusCode) {
       var statusCodeView;
-
       statusCodeView = new StatusCodeView({
         model: statusCode,
         tagName: 'tr'
@@ -1351,9 +1340,8 @@ helpers = helpers || Handlebars.helpers; data = data || {};
     };
 
     OperationView.prototype.submitOperation = function(e) {
-      var bodyParam, consumes, error_free, extraHeaders, form, has_body, header, headerParams, headersGen, invocationUrl, isFileUpload, isFormPost, map, name, o, obj, param, paramContentTypeField, params_split, query_string, responseContentTypeField, value, _i, _j, _k, _l, _len, _len1, _len2, _len3, _ref5, _ref6, _ref7, _ref8,
+      var bodyParam, consumes, error_free, extraHeaders, form, has_body, header, headerParams, headersGen, invocationUrl, isFileUpload, isFormPost, map, name, o, obj, param, paramContentTypeField, params_split, query_string, responseContentTypeField, value, _i, _j, _k, _l, _len, _len1, _len2, _len3, _ref, _ref1, _ref2, _ref3,
         _this = this;
-
       if (e != null) {
         e.preventDefault();
       }
@@ -1361,7 +1349,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
       error_free = true;
       form.find("input.required").each(function() {
         var _this = this;
-
         $(this).removeClass("error");
         if (jQuery.trim($(this).val()) === "") {
           $(this).addClass("error");
@@ -1375,9 +1362,9 @@ helpers = helpers || Handlebars.helpers; data = data || {};
       });
       if (error_free) {
         map = {};
-        _ref5 = form.serializeArray();
-        for (_i = 0, _len = _ref5.length; _i < _len; _i++) {
-          o = _ref5[_i];
+        _ref = form.serializeArray();
+        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+          o = _ref[_i];
           if ((o.value != null) && jQuery.trim(o.value).length > 0) {
             map[o.name] = o.value;
           }
@@ -1388,9 +1375,9 @@ helpers = helpers || Handlebars.helpers; data = data || {};
         if (this.model.consumes && this.model.consumes.length > 0) {
           consumes = this.model.consumes[0];
         } else {
-          _ref6 = this.model.parameters;
-          for (_j = 0, _len1 = _ref6.length; _j < _len1; _j++) {
-            o = _ref6[_j];
+          _ref1 = this.model.parameters;
+          for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
+            o = _ref1[_j];
             if (o.paramType === 'form') {
               isFormPost = true;
               consumes = false;
@@ -1404,9 +1391,9 @@ helpers = helpers || Handlebars.helpers; data = data || {};
         }
         if (isFileUpload) {
           bodyParam = new FormData();
-          _ref7 = this.model.parameters;
-          for (_k = 0, _len2 = _ref7.length; _k < _len2; _k++) {
-            param = _ref7[_k];
+          _ref2 = this.model.parameters;
+          for (_k = 0, _len2 = _ref2.length; _k < _len2; _k++) {
+            param = _ref2[_k];
             if ((param.paramType === 'body' || 'form') && param.name !== 'file' && (map[param.name] != null)) {
               bodyParam.append(param.name, map[param.name]);
             }
@@ -1417,9 +1404,9 @@ helpers = helpers || Handlebars.helpers; data = data || {};
         } else {
           bodyParam = {};
           consumes = 'application/x-www-form-urlencoded';
-          _ref8 = this.model.parameters;
-          for (_l = 0, _len3 = _ref8.length; _l < _len3; _l++) {
-            param = _ref8[_l];
+          _ref3 = this.model.parameters;
+          for (_l = 0, _len3 = _ref3.length; _l < _len3; _l++) {
+            param = _ref3[_l];
             if ((this.model.httpMethod === 'put' && param.paramType !== 'path') || (param.paramType === 'body' && typeof map[param.name] !== 'undefined')) {
               bodyParam[param.name] = map[param.name];
               delete map[param.name];
@@ -1510,7 +1497,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
     OperationView.prototype.showResponse = function(response) {
       var prettyJson;
-
       prettyJson = JSON.stringify(response, null, "\t").replace(/\n/g, "<br>");
       return $(".response_body", $(this.el)).html(escape(prettyJson));
     };
@@ -1525,7 +1511,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
     OperationView.prototype.formatXml = function(xml) {
       var contexp, formatted, indent, lastType, lines, ln, pad, reg, transitions, wsexp, _fn, _i, _len;
-
       reg = /(>)(<)(\/*)/g;
       wsexp = /[ ]*(.*)[ ]+\n/g;
       contexp = /(<.+>)(.+\n)/g;
@@ -1555,7 +1540,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
       };
       _fn = function(ln) {
         var fromTo, j, key, padding, type, types, value;
-
         types = {
           single: Boolean(ln.match(/<.+\/>/)),
           closing: Boolean(ln.match(/<\/.+>/)),
@@ -1563,7 +1547,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
         };
         type = ((function() {
           var _results;
-
           _results = [];
           for (key in types) {
             value = types[key];
@@ -1579,10 +1562,9 @@ helpers = helpers || Handlebars.helpers; data = data || {};
         padding = '';
         indent += transitions[fromTo];
         padding = ((function() {
-          var _j, _ref5, _results;
-
+          var _j, _ref, _results;
           _results = [];
-          for (j = _j = 0, _ref5 = indent; 0 <= _ref5 ? _j < _ref5 : _j > _ref5; j = 0 <= _ref5 ? ++_j : --_j) {
+          for (j = _j = 0, _ref = indent; 0 <= _ref ? _j < _ref : _j > _ref; j = 0 <= _ref ? ++_j : --_j) {
             _results.push('  ');
           }
           return _results;
@@ -1601,13 +1583,11 @@ helpers = helpers || Handlebars.helpers; data = data || {};
     };
 
     OperationView.prototype.showStatus = function(data) {
-      var code, error, pre, response_body;
-
+      var code, pre, response_body;
       try {
         code = $('<code />').text(JSON.stringify(JSON.parse(data.responseText), null, 2));
         pre = $('<pre class="json" />').append(code);
-      } catch (_error) {
-        error = _error;
+      } catch (error) {
         code = $('<code />').text(this.formatXml(data.responseText));
         pre = $('<pre class="xml" />').append(code);
       }
@@ -1623,7 +1603,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
     OperationView.prototype.toggleOperationContent = function() {
       var elem;
-
       elem = $('#' + Docs.escapeResourceName(this.model.resourceName) + "_" + this.model.nickname + "_" + this.model.httpMethod + "_" + this.model.number + "_content");
       if (elem.is(':visible')) {
         return Docs.collapseOperation(elem);
@@ -1637,18 +1616,17 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   })(Backbone.View);
 
   StatusCodeView = (function(_super) {
+
     __extends(StatusCodeView, _super);
 
     function StatusCodeView() {
-      _ref5 = StatusCodeView.__super__.constructor.apply(this, arguments);
-      return _ref5;
+      StatusCodeView.__super__.constructor.apply(this, arguments);
     }
 
     StatusCodeView.prototype.initialize = function() {};
 
     StatusCodeView.prototype.render = function() {
       var template;
-
       template = this.template();
       $(this.el).html(template(this.model));
       return this;
@@ -1663,18 +1641,17 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   })(Backbone.View);
 
   ParameterView = (function(_super) {
+
     __extends(ParameterView, _super);
 
     function ParameterView() {
-      _ref6 = ParameterView.__super__.constructor.apply(this, arguments);
-      return _ref6;
+      ParameterView.__super__.constructor.apply(this, arguments);
     }
 
     ParameterView.prototype.initialize = function() {};
 
     ParameterView.prototype.render = function() {
       var contentTypeModel, signatureModel, signatureView, template;
-
       if (this.model.paramType === 'body') {
         this.model.isBody = true;
       }
@@ -1734,11 +1711,11 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   })(Backbone.View);
 
   SignatureView = (function(_super) {
+
     __extends(SignatureView, _super);
 
     function SignatureView() {
-      _ref7 = SignatureView.__super__.constructor.apply(this, arguments);
-      return _ref7;
+      SignatureView.__super__.constructor.apply(this, arguments);
     }
 
     SignatureView.prototype.events = {
@@ -1751,7 +1728,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
     SignatureView.prototype.render = function() {
       var template;
-
       template = this.template();
       $(this.el).html(template(this.model));
       this.switchToDescription();
@@ -1788,7 +1764,6 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
     SignatureView.prototype.snippetToTextArea = function(e) {
       var textArea;
-
       if (this.isParam) {
         if (e != null) {
           e.preventDefault();
@@ -1805,18 +1780,17 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   })(Backbone.View);
 
   ContentTypeView = (function(_super) {
+
     __extends(ContentTypeView, _super);
 
     function ContentTypeView() {
-      _ref8 = ContentTypeView.__super__.constructor.apply(this, arguments);
-      return _ref8;
+      ContentTypeView.__super__.constructor.apply(this, arguments);
     }
 
     ContentTypeView.prototype.initialize = function() {};
 
     ContentTypeView.prototype.render = function() {
       var template;
-
       template = this.template();
       $(this.el).html(template(this.model));
       this.isParam = this.model.isParam;
