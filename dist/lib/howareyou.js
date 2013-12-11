@@ -54,7 +54,7 @@
 
   // Replace auth link if we are on localhost
   $(document).ready(function() {
-    var local_auth = 'http://' + AUTH_HOST + '?app_id=' + APP_KEYS.id;
+    var local_auth = AUTH_HOST + '?app_id=' + APP_KEYS.id;
     $('.howareyou_auth').attr('href', local_auth);
   });
 
