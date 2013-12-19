@@ -11,10 +11,17 @@
   }[location.hostname];
 
   var APP_KEYS = {
-    id: '92bd37b6dc98f265b929ee9bde481426',
-    key: '8462d6e3000946128f892275f1e08b3b',
-    secret: '32dd9231508fcf1cf44cb20254f7af88'
-  };
+    "api.howareyou.com": {
+      id: "92bd37b6dc98f265b929ee9bde481426",
+      key: "8462d6e3000946128f892275f1e08b3b",
+      secret: "32dd9231508fcf1cf44cb20254f7af88"
+    },
+    "apistaging.howareyou.com": {
+      id: "4837edab1c9333ab7c7516bdc4894cbf",
+      key: "c4937b2cabadd14c612b5eac6aa09372",
+      secret: "a7d769482f2d573663c1c4b7a7858b73"
+    }
+  }[location.hostname];
 
   var api_ports = {
     chid: 9292,
