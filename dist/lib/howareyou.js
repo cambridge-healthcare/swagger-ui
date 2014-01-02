@@ -26,8 +26,9 @@
   var api_ports = {
     chid: 9292,
     cds: 9005,
-    cda: 9014,
-    chea: 9015,
+    // CDA and CHEA are not accessible until they're fixed.
+    //cda: 9014,
+    //chea: 9015,
     nhschoices: 9012,
     snomed: 9494,
     sms: 9017
