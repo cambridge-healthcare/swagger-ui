@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-APP="swagger"
-DELIVER_TO="~swagger/app/doc"
-GENERATED_DIR=dist
-GENERATE_CMD="npm run-script build"
-STRATEGY=generated

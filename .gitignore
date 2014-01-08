@@ -24,3 +24,4 @@ doc/*
 node_modules
 *~
 dist/*
+tmp
