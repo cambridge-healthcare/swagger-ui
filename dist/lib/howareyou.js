@@ -6,11 +6,17 @@
 
   var API_HOST = location.protocol + "//" + location.hostname;
   var AUTH_HOST = {
+    "howareoyu-test.apigee.net":"http://auth-howareyou.herokuapp.com",
     "apistaging.howareyou.com": "https://authstaging.howareyou.com",
     "api.howareyou.com":        "https://auth.howareyou.com"
   }[location.hostname] || "https://auth-howareyou.herokuapp.com";
 
   var APP_KEYS = {
+    "howareoyu-test.apigee.net": {
+      id: "b36668040a6e632d58cf6248945e841b",
+      key: "9a127ed726c070f488f7503a72384771",
+      secret: "b36668040a6e632d58cf6248945e841b"
+    },
     "api.howareyou.com": {
       id: "92bd37b6dc98f265b929ee9bde481426",
       key: "8462d6e3000946128f892275f1e08b3b",
@@ -49,7 +55,7 @@
 
     for (var api in api_ports) {
       var port = api_ports[api];
-      howareyou.apis.push(host + ":" + port + "/" + api + "_doc.json");
+      howareyou.apis.push(host + ":" + port + "/swagger_docs/" + api + "/root.json");
     }
 
     APP_KEYS = {
