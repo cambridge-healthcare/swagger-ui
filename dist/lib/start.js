@@ -39,7 +39,7 @@ $(function () {
   }
 
   function name (url) {
-    var match = url.match(/swagger_docs\/(.+)\//i);
+    var match = url.match(/swagger_docs\/(.+)\//i)
     return match ? match[1].toUpperCase() : "";
   }
 });

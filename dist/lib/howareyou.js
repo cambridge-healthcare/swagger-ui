@@ -67,7 +67,7 @@
   } else {
     for (var api in api_ports) {
       var port = api_ports[api];
-      howareyou.apis.push(API_HOST + "/" + api + "_doc.json");
+      howareyou.apis.push(API_HOST + "/swagger_docs/" + api + "/root.json");
     }
   }
 
