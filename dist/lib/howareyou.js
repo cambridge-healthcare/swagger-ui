@@ -6,16 +6,22 @@
 
   var API_HOST = location.protocol + "//" + location.hostname;
   var AUTH_HOST = {
-    "howareoyu-test.apigee.net":"http://auth-howareyou.herokuapp.com",
+    "apiproxy-howareyou.herokuapp.com":     "http://auth-howareyou.herokuapp.com",
+    "newapi.howareyou.com":     "http://auth-howareyou.herokuapp.com",
     "apistaging.howareyou.com": "https://authstaging.howareyou.com",
     "api.howareyou.com":        "https://auth.howareyou.com"
   }[location.hostname] || "https://auth-howareyou.herokuapp.com";
 
   var APP_KEYS = {
-    "howareoyu-test.apigee.net": {
+    "apiproxy-howareyou.herokuapp.com": {
       id: "b36668040a6e632d58cf6248945e841b",
       key: "9a127ed726c070f488f7503a72384771",
-      secret: "b36668040a6e632d58cf6248945e841b"
+      secret: "3bd1daabbac6c5fe93d979e4c40fe273"
+    },
+    "newapi.howareyou.com": {
+      id: "b36668040a6e632d58cf6248945e841b",
+      key: "9a127ed726c070f488f7503a72384771",
+      secret: "3bd1daabbac6c5fe93d979e4c40fe273"
     },
     "api.howareyou.com": {
       id: "92bd37b6dc98f265b929ee9bde481426",
@@ -27,12 +33,7 @@
       key: "c4937b2cabadd14c612b5eac6aa09372",
       secret: "a7d769482f2d573663c1c4b7a7858b73"
     }
-  }[location.hostname] || {
-    // fallback for heroku
-    id: "b36668040a6e632d58cf6248945e841b",
-    key: "9a127ed726c070f488f7503a72384771",
-    secret: "3bd1daabbac6c5fe93d979e4c40fe273"
-  };
+  }[location.hostname];
 
   var api_ports = {
     chid: 9292,
