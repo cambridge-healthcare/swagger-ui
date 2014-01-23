@@ -1,40 +1,11 @@
 #!/usr/bin/env bash -e
 
-TMP_S3CONFIG="$PWD/tmp/s3cfg"
-mkdir -p "$PWD/tmp"
+S3_BUCKET=s3://swagger.howareyou.com
+S3="s3cmd -v --config $HOME/.s3cfg.ch"
 
-# Generate the s3cmd config file to tmp
+CACHE_HEADERS="Cache-Control:public, max-age=86400"
+NO_CACHE_HEADERS="Cache-Control:public, must-revalidate"
 
-cat > "$TMP_S3CONFIG" <<CONFIG
-[default]
-bucket_location = EU
-default_mime_type = binary/octet-stream
-delete_removed = False
-guess_mime_type = True
-host_base = s3.amazonaws.com
-host_bucket = %(bucket)s.s3.amazonaws.com
-human_readable_sizes = True
-preserve_attrs = True
-progress_meter = True
-skip_existing = False
-use_https = True
-verbosity = INFO
-CONFIG
+npm run build
 
-save_option () {
-  echo $* >> "$TMP_S3CONFIG"
-}
-
-save_option "access_key = $AWS_ACCESS_KEY_SWAGGER"
-save_option "secret_key = $AWS_SECRET_KEY_SWAGGER"
-
-cd dist
-
-S3_BUCKET="$S3_BUCKET_SWAGGER" \
-S3CMD_OPTIONS="--config \"$TMP_S3CONFIG\" sync" \
-STRATEGY=s3 \
-deliver $*
-
-cd ..
-
-rm "$TMP_S3CONFIG"
+$S3 --add-header="$CACHE_HEADERS" sync "dist/" "$S3_BUCKET/"
