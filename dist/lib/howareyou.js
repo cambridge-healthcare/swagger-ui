@@ -38,12 +38,6 @@
       howareyou.apis.push(host + ":" + port + "/" + api + "_doc.json");
     }
 
-    APP_KEYS = {
-      id: '9bc9ca6dcb8746e8acac5a5579118231',
-      key: '9c62b768bb2823fe21b2d1b8cef899a1',
-      secret: 'f98f9f35eb0097f829c75ac455442301'
-    };
-
   } else {
     for (var api in api_ports) {
       var port = api_ports[api];
